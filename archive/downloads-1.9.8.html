@@ -1,0 +1,376 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Downloads 1.9.8.Final - Keycloak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keycloak is an open source identity and access management solution">
+    <meta name="author" content="Keycloak Team">
+    <meta name="keywords" content="sso,idm,openid connect,saml,kerberos,ldap">
+
+    <meta name="robots" content="noindex">
+
+    
+
+    <link href="/resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/resources/css/keycloak.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/resources/favicon.ico">
+
+    <script src="/resources/js/ga.js" type="text/javascript"></script>
+    <script src="/resources/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/resources/tocbot/dist/tocbot.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="navbar navbar-expand-md bg-light shadow-sm">
+<nav class="container-xxl flex-wrap flex-md-no-wrap navbar-light">
+    <a class="navbar-brand me-5" href="/">
+        <img class="img-fluid" src="/resources/images/keycloak_logo_200px.svg" width="240" alt="Keycloak"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars fa-lg px-1 py-2"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link " href="/guides">Guides</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link " href="/documentation">Docs</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link active" href="/downloads">Downloads</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link " href="/community">Community</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link " href="/blog">Blog</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+</header>
+
+
+<div class="container mt-5">
+    <h1>Downloads <span class="badge bg-primary">1.9.8.Final</span></h1>
+
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../downloads.html">Downloads</a></li>
+        <li class="breadcrumb-item"><a href="../downloads-archive.html">Archive</a></li>
+        <li class="breadcrumb-item active">1.9.8.Final</li>
+    </ol>
+    </nav>
+
+<h2>Server</h2>
+
+<table class="table table-bordered table-striped">
+    <tbody>
+    <tr>
+        <td>Server</td>
+        <td>Standalone server distribution</td>
+        <td>
+            <a onclick="dl('server', 'standalone');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/keycloak-1.9.8.Final.zip" target="_blank">ZIP</a>
+            <span class="space"></span>
+            <a onclick="dl('server', 'standalone');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/keycloak-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Overlay</td>
+        <td>Server add-on for WildFly. Not recommended in production.</td>
+        <td>
+            <a onclick="dl('server', 'overlay');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/keycloak-overlay-1.9.8.Final.zip" target="_blank">ZIP</a>
+            <span class="space"></span>
+            <a onclick="dl('server', 'overlay');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/keycloak-overlay-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Demo</td>
+        <td>Includes WildFly with server overlay and examples. Not recommended in production.</td>
+        <td>
+            <a onclick="dl('demo', 'demo');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/keycloak-demo-1.9.8.Final.zip" target="_blank">ZIP</a> <span class="space"></span> <a href="https://downloads.jboss.org/keycloak/1.9.8.Final/keycloak-demo-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Examples</h2>
+
+<table class="table table-bordered table-striped">
+    <tbody>
+    <tr>
+        <td>Examples</td>
+        <td>Example applications and providers</td>
+        <td>
+            <a onclick="dl('examples', 'examples');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/keycloak-examples-1.9.8.Final.zip" target="_blank">ZIP</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Client Adapters</h2>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#oidc" aria-controls="oidc" role="tab" data-toggle="tab">OpenID Connect</a></li>
+    <li role="presentation"><a href="#saml" aria-controls="saml" role="tab" data-toggle="tab">SAML 2</a></li>
+</ul>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="oidc">
+        <table class="table table-bordered table-striped margin-top">
+            <tbody>
+            <tr>
+                <td>Keycloak Proxy</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <a onclick="dl('adapter', 'proxy');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/keycloak-proxy-1.9.8.Final.zip" target="_blank">ZIP</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>WildFly</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>10, 9</td>
+                            <td>
+                                <a onclick="dl('adapter', 'wildfly');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-wildfly-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'wildfly');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-wildfly-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                <a onclick="dl('adapter', 'wf8');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-wf8-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'wf8');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-wf8-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>JBoss EAP</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                <a onclick="dl('adapter', 'eap7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-wildfly-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'eap7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-wildfly-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                <a onclick="dl('adapter', 'eap6');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-eap6-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'eap6');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-eap6-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>JBoss AS</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>7.1</td>
+                            <td><a onclick="dl('adapter', 'as7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-as7-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'as7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-as7-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td></td>
+                            <td><a onclick="dl('adapter', 'js');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-js-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'js');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-js-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Jetty</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>9.2</td>
+                            <td><a onclick="dl('adapter', 'jetty9.2');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-jetty92-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'jetty9.1');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-jetty92-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                        <tr>
+                            <td>9.1</td>
+                            <td><a onclick="dl('adapter', 'jetty9.1');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-jetty91-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'jetty9.1');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-jetty91-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                        <tr>
+                            <td>8.1</td>
+                            <td><a onclick="dl('adapter', 'jetty8.1');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-jetty81-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'jetty8.1');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-jetty81-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Tomcat</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>8</td>
+                            <td><a onclick="dl('adapter', 'tomcat8');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-tomcat8-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'tomcat8');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-tomcat8-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a onclick="dl('adapter', 'tomcat7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-tomcat7-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'tomcat7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-tomcat7-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a onclick="dl('adapter', 'tomcat6');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-tomcat6-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter', 'tomcat6');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/keycloak-oidc/keycloak-tomcat6-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="saml">
+        <table class="table table-bordered table-striped margin-top">
+            <tbody>
+            <tr>
+                <td>WildFly</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>10, 9</td>
+                            <td><a onclick="dl('adapter-saml', 'wildfly');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-wildfly-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'wildfly');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-wildfly-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>JBoss EAP</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>7</td>
+                            <td><a onclick="dl('adapter-saml', 'eap7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-wildfly-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'eap7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-wildfly-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a onclick="dl('adapter-saml', 'eap6');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-eap6-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'eap6');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-eap6-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>JBoss AS</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>7.1</td>
+                            <td><a onclick="dl('adapter-saml', 'as7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-as7-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'as7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-as7-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Jetty</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>9.2</td>
+                            <td><a onclick="dl('adapter-saml', 'jetty9.2');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-jetty92-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'jetty9.2');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-jetty92-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                        <tr>
+                            <td>8.1</td>
+                            <td><a onclick="dl('adapter-saml', 'jetty8.1');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-jetty81-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'jetty8.1');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-jetty81-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Tomcat</td>
+                <td>
+                    <table class="table-downloads-inner">
+                        <tr>
+                            <td>8</td>
+                            <td><a onclick="dl('adapter-saml', 'tomcat8');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-tomcat8-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'tomcat8');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-tomcat8-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><a onclick="dl('adapter-saml', 'tomcat7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-tomcat7-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'tomcat7');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-tomcat7-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a onclick="dl('adapter-saml', 'tomcat6');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-tomcat6-adapter-dist-1.9.8.Final.zip" target="_blank">ZIP</a>
+                                <span class="space"></span>
+                                <a onclick="dl('adapter-saml', 'tomcat6');" href="https://downloads.jboss.org/keycloak/1.9.8.Final/adapters/saml/keycloak-saml-tomcat6-adapter-dist-1.9.8.Final.tar.gz" target="_blank">TAR.GZ</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center pt-2 mt-3 mb-3">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted me-3">Sponsored by</span>
+            <a href="http://www.redhat.com/" target="_blank" class="">
+                <img alt="Red Hat" src="/resources/images/Logo-RedHat-A-Standard-RGB.svg" width="100">
+            </a>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

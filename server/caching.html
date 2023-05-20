@@ -13,22 +13,22 @@
 
     
 
-    <link href="https://www.keycloak.org/resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://www.keycloak.org/resources/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://www.keycloak.org/resources/css/keycloak.css" rel="stylesheet">
+    <link href="/resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/resources/css/keycloak.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="https://www.keycloak.org/resources/favicon.ico">
+    <link rel="shortcut icon" href="/resources/favicon.ico">
 
-    <script src="https://www.keycloak.org/resources/js/ga.js" type="text/javascript"></script>
-    <script src="https://www.keycloak.org/resources/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://www.keycloak.org/resources/tocbot/dist/tocbot.min.js" type="text/javascript"></script>
+    <script src="/resources/js/ga.js" type="text/javascript"></script>
+    <script src="/resources/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/resources/tocbot/dist/tocbot.min.js" type="text/javascript"></script>
 </head>
 <body>
 
 <header class="navbar navbar-expand-md bg-light shadow-sm">
 <nav class="container-xxl flex-wrap flex-md-no-wrap navbar-light">
-    <a class="navbar-brand me-5" href="https://www.keycloak.org/">
-        <img class="img-fluid" src="https://www.keycloak.org/resources/images/keycloak_logo_200px.svg" width="240" alt="Keycloak"/>
+    <a class="navbar-brand me-5" href="/">
+        <img class="img-fluid" src="/resources/images/keycloak_logo_200px.svg" width="240" alt="Keycloak"/>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fa fa-bars fa-lg px-1 py-2"></span>
@@ -36,19 +36,19 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/guides">Guides</a>
+          <a class="nav-link " href="/guides">Guides</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/documentation">Docs</a>
+          <a class="nav-link " href="/documentation">Docs</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/downloads">Downloads</a>
+          <a class="nav-link " href="/downloads">Downloads</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/community">Community</a>
+          <a class="nav-link " href="/community">Community</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/blog">Blog</a>
+          <a class="nav-link " href="/blog">Blog</a>
         </li>
       </ul>
     </div>
@@ -61,8 +61,8 @@
         <div class="col-md-9 col-xl-10 col-sm-12">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="https://www.keycloak.org/guides">Guides</a></li>
-                    <li class="breadcrumb-item"><a href="https://www.keycloak.org/guides#server">Server</a></li>
+                    <li class="breadcrumb-item"><a href="/guides">Guides</a></li>
+                    <li class="breadcrumb-item"><a href="/guides#server">Server</a></li>
                     <li class="breadcrumb-item active">Configuring distributed caches</li>
                 </ol>
             </nav>
@@ -542,7 +542,7 @@ If you are defining a custom stack, make sure the <code>cache-stack</code> optio
 <div class="sectionbody">
 <div class="paragraph">
 <p>By default, metrics from caches are not automatically exposed when the metrics are enabled.
-For more details about how to enable metrics, see <a href="https://www.keycloak.org/server/configuration-metrics">Enabling Keycloak Metrics</a>.</p>
+For more details about how to enable metrics, see <a href="/server/configuration-metrics">Enabling Keycloak Metrics</a>.</p>
 </div>
 <div class="paragraph">
 <p>To enable global metrics for all caches within the <code>cache-container</code>, you need to change your cache configuration file (e.g.: <code>conf/cache-ispn.xml</code>) to enable <code>statistics</code> at the <code>cache-container</code> level as follows:</p>
@@ -661,7 +661,7 @@ For more details about how to enable metrics, see <a href="https://www.keycloak.
     </div>
 </div>
 
-<script src="https://www.keycloak.org/resources/js/guide.js" type="text/javascript"></script>
+<script src="/resources/js/guide.js" type="text/javascript"></script>
 
 
 <div class="container">
@@ -669,7 +669,7 @@ For more details about how to enable metrics, see <a href="https://www.keycloak.
         <div class="col-md-4 d-flex align-items-center">
             <span class="text-muted me-3">Sponsored by</span>
             <a href="http://www.redhat.com/" target="_blank" class="">
-                <img alt="Red Hat" src="https://www.keycloak.org/resources/images/Logo-RedHat-A-Standard-RGB.svg" width="100">
+                <img alt="Red Hat" src="/resources/images/Logo-RedHat-A-Standard-RGB.svg" width="100">
             </a>
         </div>
     </footer>

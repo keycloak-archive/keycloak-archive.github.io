@@ -13,22 +13,22 @@
 
     
 
-    <link href="https://www.keycloak.org/resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://www.keycloak.org/resources/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://www.keycloak.org/resources/css/keycloak.css" rel="stylesheet">
+    <link href="/resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/resources/css/keycloak.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="https://www.keycloak.org/resources/favicon.ico">
+    <link rel="shortcut icon" href="/resources/favicon.ico">
 
-    <script src="https://www.keycloak.org/resources/js/ga.js" type="text/javascript"></script>
-    <script src="https://www.keycloak.org/resources/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://www.keycloak.org/resources/tocbot/dist/tocbot.min.js" type="text/javascript"></script>
+    <script src="/resources/js/ga.js" type="text/javascript"></script>
+    <script src="/resources/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/resources/tocbot/dist/tocbot.min.js" type="text/javascript"></script>
 </head>
 <body>
 
 <header class="navbar navbar-expand-md bg-light shadow-sm">
 <nav class="container-xxl flex-wrap flex-md-no-wrap navbar-light">
-    <a class="navbar-brand me-5" href="https://www.keycloak.org/">
-        <img class="img-fluid" src="https://www.keycloak.org/resources/images/keycloak_logo_200px.svg" width="240" alt="Keycloak"/>
+    <a class="navbar-brand me-5" href="/">
+        <img class="img-fluid" src="/resources/images/keycloak_logo_200px.svg" width="240" alt="Keycloak"/>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fa fa-bars fa-lg px-1 py-2"></span>
@@ -36,19 +36,19 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/guides">Guides</a>
+          <a class="nav-link " href="/guides">Guides</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/documentation">Docs</a>
+          <a class="nav-link " href="/documentation">Docs</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/downloads">Downloads</a>
+          <a class="nav-link " href="/downloads">Downloads</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/community">Community</a>
+          <a class="nav-link " href="/community">Community</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link " href="https://www.keycloak.org/blog">Blog</a>
+          <a class="nav-link " href="/blog">Blog</a>
         </li>
       </ul>
     </div>
@@ -102,7 +102,7 @@
 <b id="docs-internal-guid-d7a78233-f66d-5bde-d887-549caec7811b" style="font-weight: normal;"><br /></b>
 <br />
 <div style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;">
-<span><img height="640" src="https://www.keycloak.org/resources/images/blog/adfs/0-adfs.png" width="617" /></span></div>
+<span><img height="640" src="/resources/images/blog/adfs/0-adfs.png" width="617" /></span></div>
 <h3 style="margin-bottom: 4pt; margin-top: 16pt;">
 <span style="color: #434343; font-size: 14pt; white-space: pre-wrap;">Setup Mappers</span></h3>
 <p><span>In the steps setting AD FS below, AD FS will be set up to send email and group information in SAML assertion. To transform these details from SAML document issued by AD FS to Keycloak user store, we’ll need to set up two corresponding mappers in the Mappers tab of Identity Provider:</span></p>
@@ -111,13 +111,13 @@
 </ul>
 <p><span><span class="Apple-tab-span" style="white-space: pre;"> </span></span></p>
 <div style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;">
-<span><span class="Apple-tab-span" style="white-space: pre;"> </span></span><span><img height="266" src="https://www.keycloak.org/resources/images/blog/adfs/1-adfs.png" width="400" /></span></div>
+<span><span class="Apple-tab-span" style="white-space: pre;"> </span></span><span><img height="266" src="/resources/images/blog/adfs/1-adfs.png" width="400" /></span></div>
 <br />
 <ul>
 <li>Mapper named </span><span style="font-size: 11pt; font-style: italic">Attribute: email</span><span> will be of type </span><span style="font-size: 11pt; font-style: italic">Attribute Importer</span><span>, and will map attribute named </span><span style="font-size: 11pt; font-style: italic">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</span><span> into user attribute named </span><span style="font-size: 11pt; font-style: italic">email</span><span>.</li>
 </ul>
 <div style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;">
-<span><img height="200" src="https://www.keycloak.org/resources/images/blog/adfs/2-adfs.png" width="400" /></span></div>
+<span><img height="200" src="/resources/images/blog/adfs/2-adfs.png" width="400" /></span></div>
 <h3 style="margin-bottom: 4pt; margin-top: 16pt;">
 <span style="color: #434343; font-size: 14pt; white-space: pre-wrap;">Obtain information for the AD FS configuration</span></h3>
 <p><span>Now we determine SAML service provider descriptor URI that will be used in AD FS setup from the </span><span style="font-size: 11pt; font-style: italic">Redirect URI</span><span> field in the identity provider detail by adding “/descriptor” to the URI in this field. The URI will be similar to </span><span style="font-weight: 700">https://kc.domain.name:8443/auth/realms/master/broker/adfs-idp-alias/endpoint/descriptor</span><span>. You can check whether you got the URI right by entering the URI into the browser - you should receive a SAML service provider XML descriptor.</span></p>
@@ -128,7 +128,7 @@
 <p><span>In AD FS Management console, right-click Tr</span><span style="font-size: 11pt; font-style: italic">ust relationships → Relying Party Trusts</span><span> and select </span><span style="font-size: 11pt; font-style: italic">Add Relying Party Trust</span><span> from the menu:</span></p>
 <br />
 <div style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;">
-<span><img src="https://www.keycloak.org/resources/images/blog/adfs/3-adfs.png" /></span></div>
+<span><img src="/resources/images/blog/adfs/3-adfs.png" /></span></div>
 <br />
 <p><span>At the beginning of the wizard, enter the SAML descriptor URL obtained in the previous step into the </span><span style="font-size: 11pt; font-style: italic">Federation metadata address </span><span>field, and let AD FS import the settings. Proceed with the wizard, and adjust the settings where appropriate. Here we use only the default settings. Note that you will need to edit the claim rules so when asked to do so at the last page of the wizard, you can leave the checkbox checked on.</span></p>
 <h4 style="margin-bottom: 4pt; margin-top: 14pt;">
@@ -137,24 +137,24 @@
 <p><span>We will set up three rules: one for mapping user ID, second for mapping standard user attributes, and third for a user group. All start by clicking the </span><span style="font-size: 11pt; font-style: italic">Add Rule</span><span> button in the </span><span style="font-size: 11pt; font-style: italic">Edit Claim Rules for kc.domain.name</span><span> window:</span></p>
 <br />
 <div style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;">
-<span><img height="400" src="https://www.keycloak.org/resources/images/blog/adfs/4-adfs.png" width="365" /></span></div>
+<span><img height="400" src="/resources/images/blog/adfs/4-adfs.png" width="365" /></span></div>
 <br />
 <p><span>The first rule will map user ID in Windows Qualified Domain name to the SAML response. In the </span><span style="font-size: 11pt; font-style: italic">Add Transform Claim Rule</span><span> window, select </span><span style="font-size: 11pt; font-style: italic">Transform an incoming claim </span><span>rule type:</span></p>
 <br />
 <div style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;">
-<span><img height="515" src="https://www.keycloak.org/resources/images/blog/adfs/5-adfs.png" width="640" /></span></div>
+<span><img height="515" src="/resources/images/blog/adfs/5-adfs.png" width="640" /></span></div>
 <br />
 <p><span>The example above targets windows account name ID format. Other name ID formats are supported but out of scope of this post. See e.g. <a href="https://blogs.msdn.microsoft.com/card/2010/02/17/name-identifiers-in-saml-assertions/">this blog</a> on how to setup name IDs for persistent and transient formats.</span></p>
 <br />
 <p><span>The second rule will map user e-mail to the SAML response. In the </span><span style="font-size: 11pt; font-style: italic">Add Transform Claim Rule</span><span> window, select </span><span style="font-size: 11pt; font-style: italic">Send LDAP attributes as Claims </span><span>rule type. You can add other attributes as needed:</span></p>
 <br />
 <div style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;">
-<span><img src="https://www.keycloak.org/resources/images/blog/adfs/6-adfs.png" /></span></div>
+<span><img src="/resources/images/blog/adfs/6-adfs.png" /></span></div>
 <br />
 <p><span>The third rule would send a group name if the user is member of a named group. Start again in the </span><span style="font-size: 11pt; font-style: italic">Add Transform Claim Rule</span><span> window, and select </span><span style="font-size: 11pt; font-style: italic">Send Group Membership as a Claim </span><span>rule type. Then enter the requested values in the field:</span></p>
 <br />
 <div style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;">
-<span><img height="515" src="https://www.keycloak.org/resources/images/blog/adfs/7-adfs.png" width="640" /></span></div>
+<span><img height="515" src="/resources/images/blog/adfs/7-adfs.png" width="640" /></span></div>
 <br />
 <p><span>This setup would send an attribute named </span><span style="font-size: 11pt; font-style: italic">Group </span><span>in the SAML assertion with value </span><span style="font-size: 11pt; font-style: italic">managers</span><span> if the authenticated user is member of the </span><span style="font-size: 11pt; font-style: italic">DOMAIN\Managers</span><span> group.</span></p>
 <h2>
@@ -192,7 +192,7 @@
         <div class="col-md-4 d-flex align-items-center">
             <span class="text-muted me-3">Sponsored by</span>
             <a href="http://www.redhat.com/" target="_blank" class="">
-                <img alt="Red Hat" src="https://www.keycloak.org/resources/images/Logo-RedHat-A-Standard-RGB.svg" width="100">
+                <img alt="Red Hat" src="/resources/images/Logo-RedHat-A-Standard-RGB.svg" width="100">
             </a>
         </div>
     </footer>
